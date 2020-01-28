@@ -22,4 +22,4 @@ As for the language, you only need to know a bit of [Markdown](https://www.markd
 ## Contributors
 Tommy V  
 Bachelor of Science - Computer Science  
-![Cursed_PB&J](https://www.myconfinedspace.com/wp-content/uploads/2017/03/PBJ-in-america-720x792.jpg)
+![Cursed PB & J sandwich](Cursed_PBJ.jpg "Cursed PB&J")
