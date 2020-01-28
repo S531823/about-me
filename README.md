@@ -11,6 +11,7 @@ This repo is used as a guide for publishing sites with GitHub Pages
 To get your site up and running with GitHub Pages, I recommend downloading:  
 * [GitHub Desktop](https://desktop.github.com/) for pushing/pulling to and from repos. This takes out the need to memorize commands.  
 * [Brackets](http://brackets.io/): a text editor that lets you preview the results of your code in a browser.  
+
 As for the language, you only need to know a bit of [Markdown](https://www.markdownguide.org/getting-started/) to get started. If you're up for something more advance, try out [HTML](https://www.w3schools.com/html/html_intro.asp).
 
 ## Recommended Resources
@@ -21,3 +22,4 @@ As for the language, you only need to know a bit of [Markdown](https://www.markd
 ## Contributors
 Tommy V  
 Bachelor of Science - Computer Science  
+![Cursed_PB&J](https://www.myconfinedspace.com/wp-content/uploads/2017/03/PBJ-in-america-720x792.jpg)
