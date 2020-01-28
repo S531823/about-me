@@ -1,1 +1,7 @@
+I am a senior working towards my BS in Computer Science, aiming to graduate in May 2020.
 
+I am originally from Boston, grew up in Seattle, and currently reside in Kansas City. Some of my non-CS related interests include visual arts and fashion design. If art paid well, I most likely would have chosen an art major instead, but CS is still pretty cool, and I’m unapologetically in it for the money.
+
+After graduating, I plan to find a developer job somewhere in the Midwest because I like the low cost of living around here. I currently work as a full stack developer on campus; during this job, I came to the realization that I’m more passionate about front end development and UI (user interface) design. That is why I prefer to have a front-end position after graduating if I can.
+
+On my free time, I like to work on my portfolio website (https://votommy.com); it will forever remain a work-in-progress, and there are still many more improvements I want to make but haven’t learned how. There are a lot of overlap in information between that personal site and my LinkedIn profile (https://linkedin.com/in/votommy).
