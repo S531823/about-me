@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>P2 | Home</title>
+        <link rel="stylesheet" href="master.css">
     </head>
     <body>
         <header>
@@ -17,64 +18,66 @@
         </nav>
         <hr>
         <main>
-            <article>
-                <section>
-                    <h2>About Me</h2>
-                    <p>My name is Tommy.</p>
-                    <table>
-                        <tr>
-                            <th>Label</th>
-                            <th>Stats</th>
-                        </tr>
-                        <tr>
-                            <td>Age: </td>
-                            <td>21</td>
-                        </tr>
-                        <tr>
-                            <td>Height:</td>
-                            <td>5'8"</td>
-                        </tr>
-                        <tr>
-                            <td>Number of eggs fried via hot leg:</td>
-                            <td>69,420</td>
-                        </tr>
-                    </table>
-                </section>
+            <div class="container">
+                <article>
+                    <section>
+                        <h2>About Me</h2>
+                        <p>My name is Tommy.</p>
+                        <table>
+                            <tr>
+                                <th>Label</th>
+                                <th>Stats</th>
+                            </tr>
+                            <tr>
+                                <td>Age: </td>
+                                <td>21</td>
+                            </tr>
+                            <tr>
+                                <td>Height:</td>
+                                <td>5'8"</td>
+                            </tr>
+                            <tr>
+                                <td>Number of eggs fried via hot leg:</td>
+                                <td>69,420</td>
+                            </tr>
+                        </table>
+                    </section>
+                    <hr>
+                    <section>
+                        <h2>Image</h2>
+                        <img src="Tink.jpg" id="image"><br>
+                        <span>"Tink" - Photo by Tommy Vo</span>
+                    </section>
+                    <hr>
+                    <section>
+                        <h2>Video</h2>
+                        <iframe src="https://www.youtube.com/embed/HQ5zkMlUDEo" width="496" height="279" allowfullscreen id="video"></iframe>
+                    </section>
+                </article>
                 <hr>
-                <section>
-                    <h2>Image</h2>
-                    <img src="Tink.jpg" id="image"><br>
-                    <span>"Tink" - Photo by Tommy Vo</span>
-                </section>
-                <hr>
-                <section>
-                    <h2>Video</h2>
-                    <iframe src="https://www.youtube.com/embed/HQ5zkMlUDEo" width="496" height="279" allowfullscreen id="video"></iframe>
-                </section>
-            </article>
-            <hr>
-            <aside>
-                <ol class="orderedList">
-                    <li>
-                        <a href="https://linkedin.com/in/votommy" target="_blank">
-                            <img src="https://img.icons8.com/ios/30/000000/linkedin.png" alt="LinkedIn Icon">
-                            <div class="linkText">LinkedIn</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/S531823/about-me" target="_blank">
-                            <img src="https://img.icons8.com/ios/30/000000/github.png" alt="GitHub Icon">
-                            <div class="linkText">GitHub</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://votommy.com" target="_blank">
-                            <img src="https://img.icons8.com/ios/30/000000/user-male-circle.png" alt="Profile Icon">
-                            <div class="linkText">Portfolio</div>
-                        </a>
-                    </li>
-                </ol>
-            </aside>
+                <aside>
+                    <ol class="orderedList">
+                        <li>
+                            <a href="https://linkedin.com/in/votommy" target="_blank">
+                                <img src="https://img.icons8.com/ios/30/000000/linkedin.png" alt="LinkedIn Icon">
+                                <div class="linkText">LinkedIn</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/S531823/about-me" target="_blank">
+                                <img src="https://img.icons8.com/ios/30/000000/github.png" alt="GitHub Icon">
+                                <div class="linkText">GitHub</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://votommy.com" target="_blank">
+                                <img src="https://img.icons8.com/ios/30/000000/user-male-circle.png" alt="Profile Icon">
+                                <div class="linkText">Portfolio</div>
+                            </a>
+                        </li>
+                    </ol>
+                </aside>
+            </div>
             <hr>
         </main>
         <footer>
@@ -84,27 +87,8 @@
             document.getElementById("copyrightInfo").innerHTML = "&copy;" + new Date().getFullYear() + " Developed by Tommy Vo";
         </script>
         <style>
-            html {
-                font-family: "Gothic Century", "Avenir", sans-serif;
-            }
-            #profPic {
-                width: 25%;
-                border-radius: 50%;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            .title {
-                text-align: center;
-                font-size: 40px;
-            }
-            nav > ul > li {
-                display: inline-block;
-                margin: 0 75px;
-                font-size: 26px;
-            }
-            nav > ul {
-                text-align: center;
+            .container {
+                padding: 0 20% 0 20%;
             }
             table, th, td {
                 border: 1px black solid;
@@ -124,17 +108,10 @@
             .orderedList {
                 list-style-type: none;
             }
-            a {
-                text-decoration: none;
-                color: black;
-            }
             .linkText {
                 display: inline-block;
                 font-size: 25px;
                 color: black;
-            }
-            #copyrightInfo {
-                text-align: center;
             }
         </style>
     </body>

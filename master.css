@@ -1,0 +1,29 @@
+html {
+    font-family: "Gothic Century", "Avenir", sans-serif;
+}
+#profPic {
+    width: 25%;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title {
+    text-align: center;
+    font-size: 40px;
+}
+nav > ul > li {
+    display: inline-block;
+    margin: 0 75px;
+    font-size: 26px;
+}
+nav > ul {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+#copyrightInfo {
+    text-align: center;
+}
