@@ -23,3 +23,6 @@ As for the language, you only need to know a bit of [Markdown](https://www.markd
 Tommy V  
 Bachelor of Science - Computer Science  
 ![Cursed PB & J sandwich](Cursed_PBJ.jpg "Cursed PB&J")
+
+## References
+* W3Schools was used for implementing the form in contact.html
