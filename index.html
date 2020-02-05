@@ -1,8 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
         <title>P2 | Home</title>
         <link rel="stylesheet" href="master.css">
+        <style>
+            .container {
+                padding: 0 20% 0 20%;
+            }
+            table, th, td {
+                border: 1px black solid;
+                text-align: left;
+            }
+            th, td {
+                padding: 0 5px;
+            }
+            #image {
+                width: 30%;
+            }
+            #video {
+                border: 0;
+            }
+            .orderedList {
+                list-style-type: none;
+            }
+            .linkText {
+                display: inline-block;
+                font-size: 25px;
+                color: black;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -45,7 +72,7 @@
                     <hr>
                     <section>
                         <h2>Image</h2>
-                        <img src="Tink.jpg" id="image"><br>
+                        <img src="Tink.jpg" id="image" alt="Photo of Tommy with a cat."><br>
                         <span>"Tink" - Photo by Tommy Vo</span>
                     </section>
                     <hr>
@@ -86,33 +113,5 @@
         <script>
             document.getElementById("copyrightInfo").innerHTML = "&copy;" + new Date().getFullYear() + " Developed by Tommy Vo";
         </script>
-        <style>
-            .container {
-                padding: 0 20% 0 20%;
-            }
-            table, th, td {
-                border: 1px black solid;
-                text-align: left;
-            }
-            th, td {
-                padding: 0 5px;
-            }
-            #image {
-                width: 30%;
-            }
-            #video {
-                border: 0;
-                width: 1920;
-                height: 1080:
-            }
-            .orderedList {
-                list-style-type: none;
-            }
-            .linkText {
-                display: inline-block;
-                font-size: 25px;
-                color: black;
-            }
-        </style>
     </body>
 </html>

@@ -1,43 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
         <title>P2 | Calculation</title>
         <link rel="stylesheet" href="master.css">
-    </head>
-    <body>
-        <header>
-            <img src="ProfPic.jpg" id="profPic" alt="Tommy Vo Self Portrait Cartoonized">
-            <h1 class="title">P2 - Styled Site</h1>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./calculation.html">Calculation</a></li>
-            </ul>
-        </nav>
-        <hr>
-        <main>
-            <div class="container">
-                <h2>Convert Kilometers to Miles</h2>
-                <label>km</label>
-                <input type="number" id="km" placeholder="km">
-                <input type="button" onclick="convert()" value="Convert"><br>
-                <label id="mi"></label>
-            </div>
-            <hr>
-        </main>
-        <footer>
-            <div id="copyrightInfo"></div>
-        </footer>
-        <script type="text/javascript">
-            document.getElementById("copyrightInfo").innerHTML = "&copy;" + new Date().getFullYear() + " Developed by Tommy Vo";
-            
-            function convert() {
-                var km = document.getElementById("km").value;
-                document.getElementById("mi").innerHTML = "<span class='calcValue'>" + km + "</span>" + "km = " + "<span class='calcValue'>" + (km * 0.62137119) + "</span>" + "mi";
-            }
-        </script>
         <style>
             label {
                 margin-left: 12px;
@@ -73,5 +39,40 @@
                 font-weight: bold;
             }
         </style>
+    </head>
+    <body>
+        <header>
+            <img src="ProfPic.jpg" id="profPic" alt="Tommy Vo Self Portrait Cartoonized">
+            <h1 class="title">P2 - Styled Site</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./calculation.html">Calculation</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <main>
+            <div class="container">
+                <h2>Convert Kilometers to Miles</h2>
+                <label>km</label>
+                <input type="number" id="km" placeholder="km">
+                <input type="button" onclick="convert()" value="Convert"><br>
+                <label id="mi"></label>
+            </div>
+            <hr>
+        </main>
+        <footer>
+            <div id="copyrightInfo"></div>
+        </footer>
+        <script>
+            document.getElementById("copyrightInfo").innerHTML = "&copy;" + new Date().getFullYear() + " Developed by Tommy Vo";
+            
+            function convert() {
+                var km = document.getElementById("km").value;
+                document.getElementById("mi").innerHTML = "<span class='calcValue'>" + km + "</span>" + "km = " + "<span class='calcValue'>" + (km * 0.62137119) + "</span>" + "mi";
+            }
+        </script>
     </body>
 </html>
