@@ -25,7 +25,7 @@ function convert() {
         localStorage.counter = Number(localStorage.counter) + 1;
     }
     else {
-        localStorage.counter = 0;
+        localStorage.counter = 1;
     }
     document.getElementById("numOfConverts").innerHTML = localStorage.counter;
 }
