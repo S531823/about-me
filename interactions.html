@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>P3 | Calculation</title>
+        <link rel="stylesheet" href="master.css">
+        <link rel="stylesheet" href="interactions.css">
+    </head>
+    <body>
+        <header>
+            <img src="ProfPic.jpg" id="profPic" alt="Tommy Vo Self Portrait Cartoonized">
+            <h1 class="title">P3 - Client-Side App</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a>Contact</a></li>
+                <li><a href="./interactions.html" style="color: #C57AFF;">Interactions</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <main>
+            <div class="container">
+                <h2>Click to retrieve a random Pokémon</h2>
+                <input type="button" value="Retrieve" onclick="getPokemon()">
+                <br>
+                <img id="pokeResult">
+                
+                <hr>
+                
+                <h2>Convert Kilometers to Miles (Vue.js)</h2>
+                <div id="km">
+                    <input id="kmLBL" v-model="kmLBL" type="number"> &nbsp; km = {{ miles }} mi
+                    <br>
+<!--                    <input type="button" value="Clear" v-on:click="clearInput">-->
+                </div>
+                
+                <hr>
+                
+                <h2>Convert Miles to Kilometers (normal js)</h2>
+                <input id="milesLBL" type="number" value="0"> &nbsp; mi = &nbsp;
+                <span id="kilometersLBL">0 km</span>
+                <br>
+                <input type="button" value="Convert" onclick="convert()">
+                &nbsp; You've made <span id="numOfConverts">0</span> conversion(s).                
+            </div>
+            <hr>
+        </main>
+        <footer>
+            <div id="copyrightInfo"></div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script>
+            document.getElementById("copyrightInfo").innerHTML = "&copy;" + new Date().getFullYear() + " Developed by Tommy Vo";
+
+            var km = new Vue({
+                el: "#km",
+                data: {
+                    kmLBL: 0
+                },
+                computed: {
+                    miles: function() {
+                        return this.kmLBL * 0.62137119
+                    }
+                }//,
+//                methods: {
+//                    clearInput: function () {
+//                        this.kmLBL = 0
+//                    }
+//                }
+            })
+            
+            function convert() {
+                const mi = document.getElementById("milesLBL").value;
+                const result = (mi * 1.609344) + " km"
+                document.getElementById("kilometersLBL").innerHTML = result;
+                
+                //localstorage to store number of times the converter was used
+                if (localStorage.counter) {
+                    localStorage.counter = Number(localStorage.counter) + 1;
+                }
+                else {
+                    localStorage.counter = 0;
+                }
+                document.getElementById("numOfConverts").innerHTML = localStorage.counter;
+            }
+            
+            
+            function getPokemon () {
+                const pokeURI = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/";
+                let randomPokemon = Math.floor(Math.random() * 807) + 1;
+                const fullPokeURI = pokeURI + randomPokemon + ".png";
+                document.getElementById("pokeResult").src = fullPokeURI;
+            }
+        </script>
+    </body>
+</html>

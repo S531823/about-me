@@ -20,10 +20,17 @@ nav > ul > li {
 nav > ul {
     text-align: center;
 }
+
 a {
     text-decoration: none;
     color: black;
 }
+
 #copyrightInfo {
     text-align: center;
+}
+
+/*Disable Contacts Page*/
+nav > ul:nth-child(1):hover {
+    cursor: not-allowed;
 }

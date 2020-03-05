@@ -2,45 +2,20 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>P2 | Home</title>
+        <title>P3 | Home</title>
         <link rel="stylesheet" href="master.css">
-        <style>
-            .container {
-                padding: 0 20% 0 20%;
-            }
-            table, th, td {
-                border: 1px black solid;
-                text-align: left;
-            }
-            th, td {
-                padding: 0 5px;
-            }
-            #image {
-                width: 30%;
-            }
-            #video {
-                border: 0;
-            }
-            .orderedList {
-                list-style-type: none;
-            }
-            .linkText {
-                display: inline-block;
-                font-size: 25px;
-                color: black;
-            }
-        </style>
+        <link rel="stylesheet" href="home.css">
     </head>
     <body>
         <header>
             <img src="ProfPic.jpg" id="profPic" alt="Tommy Vo Self Portrait Cartoonized">
-            <h1 class="title">P2 - Styled Site</h1>
+            <h1 class="title">P3 - Client-Side App</h1>
         </header>
         <nav>
             <ul>
                 <li><a href="./index.html" style="color: #C57AFF;">Home</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./calculation.html">Calculation</a></li>
+                <li><a>Contact</a></li>
+                <li><a href="./interactions.html">Interactions</a></li>
             </ul>
         </nav>
         <hr>
@@ -60,30 +35,31 @@
                                 <td>21</td>
                             </tr>
                             <tr>
-                                <td>Height:</td>
-                                <td>5'8"</td>
+                                <td>Education:</td>
+                                <td>BS - Computer Science</td>
                             </tr>
                             <tr>
-                                <td>Number of eggs fried via hot leg:</td>
-                                <td>69,420</td>
+                                <td>Skills:</td>
+                                <td>HTML, CSS, Javascript, MySQL, Swift, ASP.NET</td>
                             </tr>
                         </table>
                     </section>
                     <hr>
-                    <section>
+                    <section id="imageSection">
                         <h2>Image</h2>
-                        <img src="Tink.jpg" id="image" alt="Photo of Tommy with a cat."><br>
-                        <span>"Tink" - Photo by Tommy Vo</span>
+                        <img src="AppleWatch.jpg" id="image" alt="Photo of an apple watch.">
+                        <span>"Apple Watch" - Photo by Tommy Vo</span><br><br>
                     </section>
                     <hr>
-                    <section>
+                    <section id="videoSection">
                         <h2>Video</h2>
-                        <iframe src="https://www.youtube.com/embed/HQ5zkMlUDEo" width="496" height="279" allowfullscreen id="video"></iframe>
+                            <iframe id="video" src="https://www.youtube.com/embed/d_HlPboLRL8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <span>AURORA - One of my favorite artists.</span><br><br>
                     </section>
                 </article>
                 <hr>
                 <aside>
-                    <ol class="orderedList">
+                    <ol class="orderedList" id="linksList">
                         <li>
                             <a href="https://linkedin.com/in/votommy" target="_blank" rel="noopener">
                                 <img src="https://img.icons8.com/ios/30/000000/linkedin.png" alt="LinkedIn Icon"> <!--Taken from icons8-->

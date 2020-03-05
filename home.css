@@ -1,0 +1,32 @@
+.container {
+    padding: 0 20% 0 20%;
+}
+table, th, td {
+    border: 1px black solid;
+    text-align: left;
+}
+th, td {
+    padding: 0 5px;
+}
+#image {
+    width: 50%;
+    display: block;
+}
+#video {
+    border: 0;
+    width: 640px;
+    height: 360px;
+    display: block;
+    margin: 0 auto;
+}
+.orderedList {
+    list-style-type: none;
+}
+.linkText {
+    display: inline-block;
+    font-size: 25px;
+    color: black;
+}
+.linkText:hover {
+    transform: scale(1.1);
+}

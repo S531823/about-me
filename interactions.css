@@ -1,0 +1,37 @@
+label {
+    margin-left: 12px;
+}
+input[type=number], select, textarea {
+    width: 25%;
+    padding: 12px;
+    border: 1px gray solid;
+    border-radius: 24px;
+    box-sizing: border-box;
+    margin: 6px 0 16px 0;
+    resize: vertical;
+}
+input[type=button] {
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    border: 1px black solid;
+    border-radius: 24px;
+    cursor: pointer;
+}
+input[type=button]:hover {
+    background-color: #DDDDDD;
+}
+textarea {
+    height: 150px;
+}
+.container {
+    padding: 0 20% 3% 20%;
+}
+.calcValue {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#pokeResult {
+    height: 150px;
+}
