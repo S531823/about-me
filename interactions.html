@@ -5,6 +5,7 @@
         <title>P3 | Calculation</title>
         <link rel="stylesheet" href="master.css">
         <link rel="stylesheet" href="interactions.css">
+        <link rel = "stylesheet" href = "https://code.jquery.com/qunit/qunit-1.22.0.css">
     </head>
     <body>
         <header>
@@ -20,6 +21,9 @@
         </nav>
         <hr>
         <main>
+            <div id = "qunit"></div>
+            <div id = "qunit-fixture"></div>
+            
             <div class="container">
                 <h2>Click to retrieve a random Pokémon</h2>
                 <input type="button" value="Retrieve" onclick="getPokemon()">
@@ -52,5 +56,34 @@
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script src="master.js"></script>
         <script src="interactions.js"></script>
+<!--
+        <script src="https://code.jquery.com/qunit/qunit-2.9.2.js"></script>
+        <script>
+            function testConvert(miles) {
+                return miles * 1.609344
+            }
+
+            QUnit.test( "convert", function( assert ) {
+               var result = testConvert(60);
+               assert.equal( result, "96.56064", "60 miles should be 96.56064 kilometers." );
+            });
+            QUnit.test( "convert", function( assert ) {
+               var result = testConvert(100);
+               assert.equal( result, "160.9344", "100 miles should be 160.9344 kilometers." );
+            });
+            QUnit.test( "convert", function( assert ) {
+               var result = testConvert(999);
+               assert.equal( result, "1607.734656", "99 miles should be 1607.734656 kilometers." );
+            });
+            QUnit.test( "convert", function( assert ) {
+               var result = testConvert(0);
+               assert.equal( result, "0", "0 miles should be 0 kilometers." );
+            });
+            QUnit.test( "convert", function( assert ) {
+               var result = testConvert(1);
+               assert.equal( result, "1", "1 miles should be 1.609344 kilometers." );
+            });
+        </script>
+-->
     </body>
 </html>
